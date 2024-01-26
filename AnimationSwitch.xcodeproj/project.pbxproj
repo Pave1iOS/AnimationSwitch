@@ -14,6 +14,7 @@
 		46ADDEA42B62EC77008678C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46ADDEA32B62EC77008678C0 /* Assets.xcassets */; };
 		46ADDEA72B62EC77008678C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ADDEA52B62EC77008678C0 /* LaunchScreen.storyboard */; };
 		46ADDEB02B62ECF1008678C0 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 46ADDEAF2B62ECF1008678C0 /* SpringAnimation */; };
+		46ADDEB52B639A42008678C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADDEB42B639A42008678C0 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		46ADDEA32B62EC77008678C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46ADDEA62B62EC77008678C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46ADDEA82B62EC77008678C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46ADDEB42B639A42008678C0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				46ADDEB12B639740008678C0 /* ViewControllers */,
 				46ADDEB22B639753008678C0 /* Storyboards */,
+				46ADDEB62B639A47008678C0 /* Models */,
 				46ADDEA32B62EC77008678C0 /* Assets.xcassets */,
 				46ADDEB32B639777008678C0 /* App */,
 			);
@@ -91,6 +94,14 @@
 				46ADDE9A2B62EC75008678C0 /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		46ADDEB62B639A47008678C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46ADDEB42B639A42008678C0 /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				46ADDE9F2B62EC75008678C0 /* AnimationViewController.swift in Sources */,
 				46ADDE9B2B62EC75008678C0 /* AppDelegate.swift in Sources */,
 				46ADDE9D2B62EC75008678C0 /* SceneDelegate.swift in Sources */,
+				46ADDEB52B639A42008678C0 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
