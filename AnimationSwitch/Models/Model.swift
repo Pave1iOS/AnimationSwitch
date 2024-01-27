@@ -9,8 +9,8 @@ import Foundation
 import SpringAnimation
 
 struct PackAnimation {
-    let preset = AnimationPreset.allCases.map { $0.rawValue }.shuffled()
-    let curve = AnimationCurve.allCases.map { $0.rawValue }.shuffled()
+    let preset = AnimationPreset.allCases.map { $0.rawValue }
+    let curve = AnimationCurve.allCases.map { $0.rawValue }
     
     func getAnimation() -> [CubeAnimation] {
         var array: [CubeAnimation] = []
