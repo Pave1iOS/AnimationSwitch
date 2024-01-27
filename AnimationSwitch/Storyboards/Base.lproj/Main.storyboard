@@ -20,8 +20,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="613.66666666666663"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-Zc-hqc">
+                                <rect key="frame" x="0.0" y="613.66666666666663" width="393" height="238.33333333333337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jA-1J-D2W" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="60" y="236" width="273" height="152"/>
+                                <rect key="frame" x="60" y="230.66666666666663" width="273" height="152"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-Oj-VhT">
                                         <rect key="frame" x="10" y="10" width="253" height="132"/>
@@ -33,25 +38,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a04-vN-d2q">
-                                                <rect key="frame" x="0.0" y="27.333333333333314" width="42.666666666666664" height="22.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="27.333333333333343" width="42.666666666666664" height="22.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-pJ-cvq">
-                                                <rect key="frame" x="0.0" y="54.666666666666679" width="39.333333333333336" height="22.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="55.000000000000036" width="39.333333333333336" height="22.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-el-gdc">
-                                                <rect key="frame" x="0.0" y="82.333333333333314" width="63.333333333333336" height="22.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="82.333333333333343" width="63.333333333333336" height="22.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox1-TZ-bRx">
-                                                <rect key="frame" x="0.0" y="109.66666666666669" width="40.666666666666664" height="22.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="109.66666666666666" width="40.666666666666664" height="22.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -69,7 +74,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-QO-2cp" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="60" y="677" width="273" height="55"/>
+                                <rect key="frame" x="60" y="705.33333333333337" width="273" height="55"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Ojk-CD-LVq"/>
@@ -86,16 +91,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="0jA-1J-D2W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="16:4" id="1Wm-UG-t1g"/>
                             <constraint firstItem="U0g-QO-2cp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ad-c9-ndN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U0g-QO-2cp" secondAttribute="bottom" multiplier="19:17" id="4wS-eh-pZ5"/>
+                            <constraint firstItem="LEo-Zc-hqc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EKB-de-jky"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dF7-F3-0Qb" secondAttribute="bottom" multiplier="4:3" id="N4q-Ho-lUw"/>
+                            <constraint firstItem="0jA-1J-D2W" firstAttribute="centerX" secondItem="dF7-F3-0Qb" secondAttribute="centerX" id="US6-0c-eNK"/>
+                            <constraint firstAttribute="bottom" secondItem="LEo-Zc-hqc" secondAttribute="bottom" id="Wbe-Ps-U2L"/>
+                            <constraint firstItem="LEo-Zc-hqc" firstAttribute="top" secondItem="dF7-F3-0Qb" secondAttribute="bottom" id="Zfd-ic-a9Y"/>
+                            <constraint firstItem="U0g-QO-2cp" firstAttribute="centerY" secondItem="LEo-Zc-hqc" secondAttribute="centerY" id="ZkF-ta-Bbh"/>
                             <constraint firstItem="dF7-F3-0Qb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f42-DA-n5m"/>
                             <constraint firstItem="U0g-QO-2cp" firstAttribute="width" secondItem="0jA-1J-D2W" secondAttribute="width" id="mwX-ua-Uxg"/>
                             <constraint firstItem="dF7-F3-0Qb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pJb-xF-aLd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jA-1J-D2W" secondAttribute="trailing" constant="60" id="r0v-3o-JVf"/>
                             <constraint firstItem="0jA-1J-D2W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="uDw-OF-1O3"/>
                             <constraint firstItem="dF7-F3-0Qb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="um9-db-mdt"/>
+                            <constraint firstItem="0jA-1J-D2W" firstAttribute="centerY" secondItem="dF7-F3-0Qb" secondAttribute="centerY" id="vaU-3h-MkA"/>
+                            <constraint firstItem="LEo-Zc-hqc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zLP-Uc-Ds6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -116,6 +126,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
