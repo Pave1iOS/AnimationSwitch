@@ -30,14 +30,14 @@ final class AnimationViewController: UIViewController {
         }
     }
     
-    private let packAnimation = PackAnimation().getAnimation()
+    private var packAnimation = PackAnimation().getAnimation()
 
     private var indexAnimation = 0 {
         didSet {
             if indexAnimation == packAnimation.count - 1 {
                 indexAnimation = 0
                 
-                animationChangeButton.setTitle("Run again", for: .normal)
+                packAnimation = PackAnimation().getAnimation()
             }
         }
     }
