@@ -32,7 +32,7 @@ final class AnimationViewController: UIViewController {
 
     private var animationIndex = 0 {
         didSet {
-            if animationIndex == preset.count {
+            if animationIndex + 1 == preset.count {
                 animationIndex = 0
                 
                 animationChangeButton.setTitle("Run again", for: .normal)
