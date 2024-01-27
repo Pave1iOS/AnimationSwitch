@@ -30,18 +30,6 @@ final class AnimationViewController: UIViewController {
         }
     }
     
-    private let packAnimation = PackAnimation().getAnimation()
-
-    private var indexAnimation = 0 {
-        didSet {
-            if indexAnimation == packAnimation.count - 1 {
-                indexAnimation = 0
-                
-                animationChangeButton.setTitle("Run again", for: .normal)
-            }
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         startScreen()
@@ -55,46 +43,42 @@ final class AnimationViewController: UIViewController {
 private extension AnimationViewController {
     func changeAnimation() {
         
-        let selectedAnimation = packAnimation[indexAnimation]
+        let packAnimation = PackAnimation().getAnimation()
         
-        animationSpringView.animation = selectedAnimation.preset
-        animationSpringView.curve = selectedAnimation.curve
-        animationSpringView.force = selectedAnimation.force
-        animationSpringView.duration = selectedAnimation.duration
-        animationSpringView.delay = selectedAnimation.delay
+        animationSpringView.animation = packAnimation.preset
+        animationSpringView.curve = packAnimation.curve
+        animationSpringView.force = packAnimation.force
+        animationSpringView.duration = packAnimation.duration
+        animationSpringView.delay = packAnimation.delay
         
-        presetLabel.text = "preset: \(selectedAnimation.preset)"
-        curveLabel.text = "curve: \(selectedAnimation.curve)"
-        forceLabel.text = "force: \(selectedAnimation.force)"
-        durationLabel.text = "duration: \(selectedAnimation.duration)"
-        delayLabel.text = "delay: \(selectedAnimation.delay)"
+        presetLabel.text = "preset: \(packAnimation.preset)"
+        curveLabel.text = "curve: \(packAnimation.curve)"
+        forceLabel.text = "force: \(packAnimation.force)"
+        durationLabel.text = "duration: \(packAnimation.duration)"
+        delayLabel.text = "delay: \(packAnimation.delay)"
         
         animationChangeButton.setTitle(
-            "Run \(packAnimation[indexAnimation + 1].preset)",
+            "Run \(packAnimation.preset)",
             for: .normal
         )
         
         animationSpringView.animate()
-        indexAnimation += 1
-        
     }
     
     func startScreen() {
         
-        packAnimation.forEach { animation in
+        let animation = PackAnimation().getAnimation()
         
-            animationSpringView.animation = animation.preset
-            animationSpringView.curve = animation.curve
-            animationSpringView.force = animation.force
-            animationSpringView.duration = animation.duration
-            animationSpringView.delay = animation.delay
-            
-            presetLabel.text = "preset: \(animation.preset)"
-            curveLabel.text = "curve: \(animation.curve)"
-            forceLabel.text = "force: \(animation.force)"
-            durationLabel.text = "duration: \(animation.duration)"
-            delayLabel.text = "delay: \(animation.delay)"
-            
-        }
+        animationSpringView.animation = animation.preset
+        animationSpringView.curve = animation.curve
+        animationSpringView.force = animation.force
+        animationSpringView.duration = animation.duration
+        animationSpringView.delay = animation.delay
+        
+        presetLabel.text = "preset: \(animation.preset)"
+        curveLabel.text = "curve: \(animation.curve)"
+        forceLabel.text = "force: \(animation.force)"
+        durationLabel.text = "duration: \(animation.duration)"
+        delayLabel.text = "delay: \(animation.delay)"
     }
 }

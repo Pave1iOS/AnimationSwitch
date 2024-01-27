@@ -12,22 +12,14 @@ struct PackAnimation {
     let preset = AnimationPreset.allCases.map { $0.rawValue }
     let curve = AnimationCurve.allCases.map { $0.rawValue }
     
-    func getAnimation() -> [CubeAnimation] {
-        var array: [CubeAnimation] = []
-        
-        for _ in 1...preset.count {
-            array.append(
-                CubeAnimation(
-                    preset: preset.randomElement() ?? "",
-                    curve: curve.randomElement() ?? "",
-                    force: randomDoubleNumber(),
-                    duration: randomDoubleNumber(),
-                    delay: randomDoubleNumber()
-                )
-            )
-        }
-        
-        return array
+    func getAnimation() -> CubeAnimation {
+        return CubeAnimation(
+            preset: preset.randomElement() ?? "",
+            curve: curve.randomElement() ?? "",
+            force: randomDoubleNumber(),
+            duration: randomDoubleNumber(),
+            delay: randomDoubleNumber()
+        )
     }
 }
 
