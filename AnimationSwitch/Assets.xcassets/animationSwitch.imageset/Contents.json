@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "d58f7b1b-5dda-4c7d-9db0-b1fc6af2c9cb_full.png",
+      "filename" : "animationSwitch 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "animationSwitch 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "animationSwitch.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

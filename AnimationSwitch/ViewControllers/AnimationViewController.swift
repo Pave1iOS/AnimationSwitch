@@ -18,11 +18,14 @@ final class AnimationViewController: UIViewController {
     
     @IBOutlet weak var animationSpringView: SpringView! {
         didSet {
+            animationSpringView.layer.borderColor = UIColor.white.cgColor
+            animationSpringView.layer.borderWidth = 2
+            
             animationSpringView.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var animationChangeButton: SpringButton!{
-        didSet {
+        didSet {            
             animationChangeButton.layer.cornerRadius = 10
         }
     }
@@ -93,6 +96,5 @@ private extension AnimationViewController {
             delayLabel.text = "delay: \(animation.delay)"
             
         }
-        
     }
 }

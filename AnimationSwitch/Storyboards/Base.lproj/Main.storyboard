@@ -69,10 +69,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-QO-2cp" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="60" y="722" width="273" height="45"/>
+                                <rect key="frame" x="60" y="677" width="273" height="55"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="tfm-HK-mKu"/>
+                                    <constraint firstAttribute="height" constant="55" id="Ojk-CD-LVq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Run">
@@ -84,11 +84,11 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="0jA-1J-D2W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="16:4" id="1Wm-UG-t1g"/>
                             <constraint firstItem="U0g-QO-2cp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ad-c9-ndN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U0g-QO-2cp" secondAttribute="bottom" multiplier="16:15" id="4wS-eh-pZ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U0g-QO-2cp" secondAttribute="bottom" multiplier="19:17" id="4wS-eh-pZ5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dF7-F3-0Qb" secondAttribute="bottom" multiplier="4:3" id="N4q-Ho-lUw"/>
                             <constraint firstItem="dF7-F3-0Qb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f42-DA-n5m"/>
                             <constraint firstItem="U0g-QO-2cp" firstAttribute="width" secondItem="0jA-1J-D2W" secondAttribute="width" id="mwX-ua-Uxg"/>
@@ -116,9 +116,6 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
