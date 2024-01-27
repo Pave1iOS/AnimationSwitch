@@ -89,10 +89,6 @@ private extension AnimationViewController {
     
     func randomDoubleNumber() -> Double {
         let number = Double.random(in: 0.3...1.5)
-        return roundDecimal(places: number)
-    }
-    
-    func roundDecimal(places double: Double) -> Double {
-        return Double(round(100 * double) / 100)
+        return Double(round(100 * number) / 100)
     }
 }
